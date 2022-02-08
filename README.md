@@ -2,15 +2,24 @@
 
 This is a me testing out putting a package on PyPi
 
-[link to package](https://pypi.org/project/sidspackage/0.0.1/)
+-------
+
+[link to package](https://pypi.org/project/sidspackage/)
+
 ```
 pip install sidspackage
 ```
+
+-------
 
 # Colored Text
 
 This is used to print messages with color in terminal
 It can also make text bold and underlined
+
+-------
+
+## Usage
 
 ```py
 from sidspackage import ColorPrint
@@ -25,13 +34,15 @@ cp.help
 
 ![Output](https://github.com/FusionSid/sids-package/blob/master/example2.png)
 
+-------
+
 # Pycord Paginator
 
 This is a paginator for pycord.
 It takes a list of embeds and makes them paginated with buttons
 You will need py-cord installed for this to work
 
-![Example](https://github.com/FusionSid/sids-package/blob/master/example1.png)
+-------
 
 ## Usage
 
@@ -56,3 +67,4 @@ async def func_name(ctx):
             i.disabled = True
     return await message.edit(view=view)
 ```
+![Output2](https://github.com/FusionSid/sids-package/blob/master/example1.png)
