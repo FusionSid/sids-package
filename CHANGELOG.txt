@@ -5,7 +5,10 @@ Change Log
 -------------------
 - First Release
 
-0.0.1 (08/02/2022)
+0.0.2 (08/02/2022)
 -------------------
 - Bug Fixes
 
+0.0.3 (08/02/2022)
+-------------------
+- Turns out importing the package wasn't working now it should

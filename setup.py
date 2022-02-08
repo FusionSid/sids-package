@@ -1,6 +1,6 @@
-from setuptools import setup
+from setuptools import setup, find_packages
  
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 DESCRIPTION = ""
 
 setup(
@@ -12,5 +12,5 @@ setup(
     description=DESCRIPTION,
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     long_description_content_type='text/markdown',
-    packages=[]
+    packages=find_packages()
 )
