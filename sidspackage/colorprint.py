@@ -17,17 +17,19 @@ class ColorPrint():
         }
         
 
-    def print(self, color, message):
+    def print(self, color, text):
         color = color.lower()
 
         if color not in self.colors:
             return print(self.colors["bold"]+self.colors["red"]+"ERROR: "+self.colors["reset"]+self.colors['yellow']+"Color does not exist")
         color = self.colors[color]
-        print(f"{color}message")
+        reset = self.colors["reset"]
+        print(f"{color}{text}{reset}")
 
     @property
     def help(self):
+        reset = self.colors["reset"]
         colors = []
         for key, value in self.colors.items():
             colors.append(value+key)
-        print("\nColors List:\n"+", ".join(colors)+"\n")
+        print("\nColors List:\n"+", ".join(colors)+f"\n{reset}")
