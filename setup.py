@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
  
-VERSION = '0.0.3'
-DESCRIPTION = ""
+VERSION = '0.0.4'
+DESCRIPTION = "This is my first PyPi package, so its mainly a test"
 
 setup(
     name='sidspackage',
@@ -14,3 +14,8 @@ setup(
     long_description_content_type='text/markdown',
     packages=find_packages()
 )
+
+# commands cause I keep forgetting:
+
+# python3 setup.py bdist_wheel
+# twine upload --skip-existing dist/*

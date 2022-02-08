@@ -12,3 +12,8 @@ Change Log
 0.0.3 (08/02/2022)
 -------------------
 - Turns out importing the package wasn't working now it should
+
+0.0.4 (09/02/2022)
+-------------------
+- Added custom exception, for better handling. Made colors a global variable to work with custom exceptions, rewrote help and made the color argument in print optional.
+- Changes all made by TheOnlyWayUp

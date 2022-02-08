@@ -20,7 +20,7 @@ class ColorPrint:
         def __init__(
             self,
             color,
-            message=f"Color not found. You can choose from the following list of colors -\n{', '.join([key.capitalize() for key in colors.keys()])}\nOr you can do ColorPrint.help for more information and an example of usage.",
+            message=f"Color not found. You can choose from the following list of colors -\n{', '.join([key.capitalize() for key in colors.keys()])}\nOr you can do ColorPrint().help for more information and an example of usage.",
         ):
             self.color = color
             self.message = message
@@ -45,5 +45,5 @@ class ColorPrint:
     def help(self):
         reset = colors["reset"]
         print(
-            f"---- List of Colors ----\n{', '.join(f'{color}{name.capitalize()}{reset}' for name, color in colors.items())}\n\n---- Usage ----\n>>> c = ColorPrint()\n>>> #nc.print('text', color=Optional[str])\n>>> c.print('Hello World', color='green')\n{colors['green']}Hello World{colors['reset']}"
+            f"---- List of Colors ----\n{', '.join(f'{color}{name.capitalize()}{reset}' for name, color in colors.items())}\n\n---- Usage ----\n>>> c = ColorPrint()\n>>> c.print('text', color=Optional[str])\n>>> c.print('Hello World', color='green')\n{colors['green']}Hello World{colors['reset']}"
         )
