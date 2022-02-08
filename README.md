@@ -22,6 +22,7 @@ cp.help
 
 This is a paginator for pycord.
 It takes a list of embeds and makes them paginated with buttons
+You will need py-cord installed for this to work
 
 ![Example](https://github.com/FusionSid/sids-package/blob/main/example1.png)
 

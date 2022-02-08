@@ -12,6 +12,5 @@ setup(
     description=DESCRIPTION,
     long_description=open('README.md').read() + '\n\n' + open('CHANGELOG.txt').read(),
     long_description_content_type='text/markdown',
-    packages=[],
-    install_requires=['py-cord==2.0.0b1'],
+    packages=[]
 )

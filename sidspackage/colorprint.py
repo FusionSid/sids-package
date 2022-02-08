@@ -31,5 +31,3 @@ class ColorPrint():
         for key, value in self.colors.items():
             colors.append(value+key)
         print("\nColors List:\n"+", ".join(colors)+"\n")
-        
-ColorPrint().help()
